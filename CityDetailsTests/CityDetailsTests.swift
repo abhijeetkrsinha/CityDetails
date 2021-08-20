@@ -17,11 +17,27 @@ class CityDetailsTests: XCTestCase {
         measure {
             let app = XCUIApplication();
             app.launch()
+            let a = 5,b = 10
+            XCTAssertTrue(a>b)
             
         }
         
         
     }
+    
+    func testBool()
+    {
+        let a = 5,b = 10
+        XCTAssertFalse(a>b)
+
+    }
+    
+    func testXYZ()
+    {
+        let a = "abhi"
+        XCTAssertNotNil(a)
+    }
+    
     
     
     func testApi()
